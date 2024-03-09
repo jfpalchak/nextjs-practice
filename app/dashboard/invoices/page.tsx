@@ -14,7 +14,7 @@ type SearchParams = {
   };
 }
 
-export default async function Invoices({ searchParams }: SearchParams ) {
+export default async function InvoicesPage({ searchParams }: SearchParams ) {
 
   const query = searchParams?.query || '';
   const currentPage = Number(searchParams?.page) || 1;
