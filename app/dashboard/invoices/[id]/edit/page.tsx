@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Form from "@/app/ui/invoices/edit-form";
 import Breadcrumbs from "@/app/ui/invoices/breadcrumbs";
@@ -7,6 +8,10 @@ type Params = {
   params: {
     id: string;
   };
+}
+
+export const metadata: Metadata = {
+  title: 'Edit Invoice',
 }
 
 export default async function EditInvoicePage({ params }: Params) {
